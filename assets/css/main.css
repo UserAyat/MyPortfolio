@@ -1276,3 +1276,38 @@ section,
   max-width: 298px;
   width: 100%;
 }
+
+
+.circle {
+  animation: pulsing 2s infinite;
+}
+.stop_anime:hover img{
+  animation: none;
+  -webkit-animation: none;
+  transition: .5s;
+}
+
+@-webkit-keyframes pulsing {
+ 0%{
+  transform: scale(1);
+ }
+ 50%{
+  transform: scale(0.9)
+ }
+ 100%{
+
+  transform: scale(1);
+ }
+}
+
+@keyframes pulsing {
+  0% {
+    transform: scale(1)
+  }
+  50%{
+    transform: scale(0.9)
+   }
+  100% {
+    transform: scale(1);
+  }
+}
